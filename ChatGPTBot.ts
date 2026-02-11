@@ -58,7 +58,7 @@ registerBot(BOT_TOKEN, async (message, userId, user) => {
                 "Authorization": `Bearer ${GROQ_API_KEY}`
             },
             body: JSON.stringify({
-                model: "llama-3.1-70b-versatile",
+                model: "mixtral-8x7b-32768",
                 messages: [
                     {
                         role: "system",
